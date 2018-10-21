@@ -14,8 +14,6 @@ MongoClient.connect(db.url, (error, client) => {
 
   // Extraxting database object
   const db = client.db('rpm_database')
-  console.log('DATABASE: ',db)
-
   // Routes connection
   require('./app/routes')(app, db);
 
